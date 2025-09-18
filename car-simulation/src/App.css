@@ -1,0 +1,113 @@
+/* Make canvas fill the entire screen */
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#control-sidebar, #speedometer {
+  pointer-events: none; /* Keep the container non-interactable */
+}
+/* Speedometer Styling */
+#speedometer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #222 30%, #111 100%);
+  border: 5px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+  font-family: Arial, sans-serif;
+  color: white;
+  z-index: 10;
+}
+
+.speedometer-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.speedometer-needle {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 4px;
+  height: 60px;
+  background: red;
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-in-out; /* Smooth needle movement */
+  z-index: 12;
+}
+
+.speedometer-text{
+  display: none;
+}
+
+
+
+/* Control Sidebar */
+#control-sidebar {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 220px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+  padding: 10;
+}
+
+#control-sidebar, #speedometer {
+  pointer-events: none; 
+}
+
+/* Ensure engine status text has smooth color transition */
+#engine-status {
+  font-weight: bold;
+  color: red;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #speedometer {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  #Engine {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  #control-sidebar {
+    width: 180px;
+    padding: 10px;
+  }
+
+  #control-sidebar h2 {
+    font-size: 16px;
+  }
+
+  #control-sidebar li {
+    font-size: 12px;
+  }
+}
