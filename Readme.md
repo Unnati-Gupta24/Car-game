@@ -37,7 +37,7 @@ A realistic 3D car simulation built with React, Three.js, and Cannon.js physics 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/3D-Car-Simulation.git
+git clone https://github.com/Unnati-Gupta24/Car-game.git
 ```
 
 2. Navigate to the project directory:
