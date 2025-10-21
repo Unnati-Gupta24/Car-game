@@ -11,7 +11,7 @@ A realistic 3D car simulation built with React, Three.js, and Cannon.js physics 
 - Interactive speedometer
 - Sound effects for engine start, acceleration, and braking
 - Responsive controls
-- HDR skybox environment
+- HDR skybox environment 
 - Textured ground surface
 
 ## 🎮 Controls
